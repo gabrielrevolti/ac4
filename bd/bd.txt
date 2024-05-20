@@ -1,5 +1,5 @@
 CREATE SCHEMA Users;
-USE User;
+USE Users;
 create table Users (
 	userName varchar(50) not null,
     userEmail varchar(100) not null,
