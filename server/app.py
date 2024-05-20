@@ -1,5 +1,3 @@
-#pip install mysql-connector-python
-
 from flask import Flask, request, jsonify
 from mysql import connector
 from flask_cors import CORS

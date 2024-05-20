@@ -1,0 +1,9 @@
+#cd server:
+  #pip install flask
+  #pip install cors
+  #pip install mysql-connector-python
+
+#cd client:
+  #cd my-app:
+    #npm install
+    #npm install axios
