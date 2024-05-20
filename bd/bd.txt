@@ -1,0 +1,7 @@
+CREATE SCHEMA teste;
+
+USE teste;
+
+CREATE TABLE teste(
+  userName varchar(50) NOT NULL
+);
