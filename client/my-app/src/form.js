@@ -4,7 +4,9 @@ import axios from 'axios';
 function Form(){
 
     const [campos, setCampos] = useState({
-        txtNome: ''
+        txtNome: '',
+        txtEmail: '',
+        txtPassword: ''
     });
 
     const [ret, setRet] = useState('');
@@ -23,7 +25,7 @@ function Form(){
         event.preventDefault();
         console.log(campos);
         axios.post('http://localhost:5000//api/say_name5', campos).then(response => {
-            setRet(response.data.first_name);
+            setRet(response.data.response);
         })
     }
 
@@ -39,10 +41,17 @@ function Form(){
                         <label>Nome:
                             <input type="text" name="txtNome" id="txtNome" onChange={handleInputChange} />
                         </label>
+                        <br/>
+                        <label>Email  :
+                            <input type="email" name="txtEmail" id="txtEmail" onChange={handleInputChange} />
+                        </label>
+                        <br/>
+                        <label>Senha:
+                            <input type="password" name="txtPassword" id="txtPassword" onChange={handleInputChange} />
+                        </label>
                     </div>
- 
+                    <div><p>Status: {ret}</p></div>
                     <input type="submit" value="Salvar" />
-                    <div><p>Retornou: {ret}</p></div>
                 </fieldset>
             </form>
         </div>

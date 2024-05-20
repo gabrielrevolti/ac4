@@ -1,7 +1,9 @@
-CREATE SCHEMA teste;
-
-USE teste;
-
-CREATE TABLE teste(
-  userName varchar(50) NOT NULL
+CREATE SCHEMA Users;
+USE User;
+create table Users (
+	userName varchar(50) not null,
+    userEmail varchar(100) not null,
+    userPassword varchar(50) not null
 );
+
+select * from Users;
