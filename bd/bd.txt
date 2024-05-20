@@ -1,3 +1,5 @@
+No mysql-workbench colocar os seguintes comandos:
+
 CREATE SCHEMA teste;
 
 USE teste;
@@ -5,3 +7,5 @@ USE teste;
 CREATE TABLE teste(
   userName varchar(50) NOT NULL
 );
+
+select * from teste;
